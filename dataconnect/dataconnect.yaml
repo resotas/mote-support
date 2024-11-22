@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "mote-support"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "mote-support-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
